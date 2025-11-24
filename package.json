@@ -1,0 +1,38 @@
+{
+  "name": "arrow",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "backend:dev": "./run-backend-dev.sh",
+    "backend:build": "./build-backend.sh",
+    "postinstall": "echo '✅ npm dependencies installed. Run npm run tauri:dev to start the app!'",
+    "tauri:dev": "npm run backend:build && tauri dev",
+    "tauri:dev:quick": "tauri dev",
+    "tauri:build": "npm run backend:build && tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "@tauri-apps/plugin-shell": "^2.3.1",
+    "framer-motion": "^11.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.19",
+    "wrangler": "^4.68.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/node": "^24.9.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0"
+  }
+}
