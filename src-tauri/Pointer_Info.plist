@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Accessibility Permission (required for keyboard monitoring) -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>Pointer needs Accessibility permission to monitor keyboard shortcuts and provide AI assistance when you press the hotkey.</string>
+    
+    <!-- Input Monitoring Permission -->
+    <key>NSInputMonitoringUsageDescription</key>
+    <string>Pointer needs Input Monitoring permission to detect keyboard shortcuts for triggering AI assistance.</string>
+    
+    <!-- Screen Recording Permission (if using screenshots) -->
+    <key>NSScreenCaptureUsageDescription</key>
+    <string>Pointer needs Screen Recording permission to capture context and provide better AI assistance.</string>
+    
+    <!-- Accessibility Usage Description -->
+    <key>NSAccessibilityUsageDescription</key>
+    <string>Pointer needs Accessibility permission to read selected text and provide contextual AI assistance.</string>
+    
+    <!-- App runs as agent (menu bar only) -->
+    <key>LSUIElement</key>
+    <true/>
+</dict>
+</plist>
